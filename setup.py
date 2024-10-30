@@ -13,6 +13,6 @@ setup(
         'numpy',
         'scipy',
         'msgpack_numpy',
-#        'cameralib @ git+https://github.com/isarandi/cameralib.git',
+        'cameralib @ git+https://github.com/isarandi/cameralib.git',
     ],
 )
