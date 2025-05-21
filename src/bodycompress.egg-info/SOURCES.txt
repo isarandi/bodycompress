@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/bodycompress/__init__.py
+src/bodycompress/bodycompress.py
+src/bodycompress.egg-info/PKG-INFO
+src/bodycompress.egg-info/SOURCES.txt
+src/bodycompress.egg-info/dependency_links.txt
+src/bodycompress.egg-info/requires.txt
+src/bodycompress.egg-info/top_level.txt
+tests/test.py

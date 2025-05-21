@@ -1,0 +1,9 @@
+__exit__
+========
+
+.. py:method:: bodycompress.BodyCompressor.__exit__(exc_type, exc_value, traceback)
+
+   Close the file and remove it if an exception occurred.
+
+
+.. footbibliography::

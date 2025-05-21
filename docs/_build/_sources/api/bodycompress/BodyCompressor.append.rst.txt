@@ -1,0 +1,19 @@
+append
+======
+
+.. py:method:: bodycompress.BodyCompressor.append(**kwargs)
+
+   Append data for frame to the file.
+
+   :param \*\*kwargs: data to be stored. Supported keys are
+
+                      - vertices: (N, 3) float32 array of vertices in millimeters
+                      - joints: (N, 3) float32 array of joints in millimeters
+                      - vertex_uncertainties: (N,) float32 array of vertex uncertainties in meters
+                      - joint_uncertainties: (N,) float32 array of joint uncertainties in meters
+                      - camera: cameralib.Camera object or dict with camera parameters
+   :param Other keys are also allowed:
+   :param but they will not be quantized.:
+
+
+.. footbibliography::

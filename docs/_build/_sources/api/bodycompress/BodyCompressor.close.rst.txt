@@ -1,0 +1,9 @@
+close
+=====
+
+.. py:method:: bodycompress.BodyCompressor.close()
+
+   Wait for the currently pending compression to finish then close the file.
+
+
+.. footbibliography::

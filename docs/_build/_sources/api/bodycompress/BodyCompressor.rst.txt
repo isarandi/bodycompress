@@ -1,0 +1,52 @@
+BodyCompressor
+==============
+
+.. py:class:: bodycompress.BodyCompressor(path, metadata=None, quantization_mm = 0.5, n_threads = 0)
+
+   Bases: :py:obj:`contextlib.AbstractContextManager`
+
+
+   Compresses body data to a file using xz compression.
+
+   The data is quantized, difference encoded, serialized using ``msgpack_numpy`` then compressed
+   using ``xz`` and written to the file.
+
+   :param path: path to the output file
+   :param metadata: metadata to be stored in the beginning of the file
+   :param quantization_mm: quantization level for the vertices and joints in millimeters.
+                           Coordinates are rounded to the nearest multiple of this value.
+
+
+   .. py:method:: append(**kwargs)
+
+      Append data for frame to the file.
+
+      :param \*\*kwargs: data to be stored. Supported keys are
+
+                         - vertices: (N, 3) float32 array of vertices in millimeters
+                         - joints: (N, 3) float32 array of joints in millimeters
+                         - vertex_uncertainties: (N,) float32 array of vertex uncertainties in meters
+                         - joint_uncertainties: (N,) float32 array of joint uncertainties in meters
+                         - camera: cameralib.Camera object or dict with camera parameters
+      :param Other keys are also allowed:
+      :param but they will not be quantized.:
+
+
+   .. footbibliography::
+
+   .. py:method:: close()
+
+      Wait for the currently pending compression to finish then close the file.
+
+
+   .. footbibliography::
+
+   .. py:method:: __exit__(exc_type, exc_value, traceback)
+
+      Close the file and remove it if an exception occurred.
+
+
+   .. footbibliography::
+
+
+.. footbibliography::

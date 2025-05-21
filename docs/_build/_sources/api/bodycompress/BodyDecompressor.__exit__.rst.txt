@@ -1,0 +1,9 @@
+__exit__
+========
+
+.. py:method:: bodycompress.BodyDecompressor.__exit__(*args)
+
+   Close the decompressor.
+
+
+.. footbibliography::

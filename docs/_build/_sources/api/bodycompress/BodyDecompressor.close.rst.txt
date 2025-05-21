@@ -1,0 +1,9 @@
+close
+=====
+
+.. py:method:: bodycompress.BodyDecompressor.close()
+
+   Terminate the decompression process and close the file.
+
+
+.. footbibliography::

@@ -1,0 +1,9 @@
+__next__
+========
+
+.. py:method:: bodycompress.BodyDecompressor.__next__()
+
+   Read the next frame and decode it from the file.
+
+
+.. footbibliography::

@@ -1,0 +1,39 @@
+BodyDecompressor
+================
+
+.. py:class:: bodycompress.BodyDecompressor(path)
+
+   Bases: :py:obj:`contextlib.AbstractContextManager`, :py:obj:`collections.abc.Iterator`
+
+
+   Decompresses body data from a file compressed using BodyCompressor.
+
+   The data is decompressed using xz, deserialized using msgpack_numpy, difference decoded and
+   unquantized.
+
+   :param path: path to the compressed file
+
+
+   .. py:method:: __next__()
+
+      Read the next frame and decode it from the file.
+
+
+   .. footbibliography::
+
+   .. py:method:: close()
+
+      Terminate the decompression process and close the file.
+
+
+   .. footbibliography::
+
+   .. py:method:: __exit__(*args)
+
+      Close the decompressor.
+
+
+   .. footbibliography::
+
+
+.. footbibliography::
