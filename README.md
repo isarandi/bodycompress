@@ -1,6 +1,7 @@
 # BodyCompress
 
-This library compresses and serializes the output of nonparametric 3D human mesh estimators to disk.
+This library compresses and serializes the output of nonparametric 3D human mesh estimators such as 
+[Neural Localizer Fields (NLF)](https://virtualhumans.mpi-inf.mpg.de/nlf) to disk.
 
 Without compression, a sequence of 3D human meshes extracted from a video can take up huge amounts
 of disk space, as
